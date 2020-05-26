@@ -26,7 +26,7 @@ SECRET_KEY = '5+yg%-vjw7b^cy#*o_jer_n!1l8d0j-b&n&&(sk43vo9&l$w!='
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+APPEND_SLASH=False
 CART_SESSION_ID = 'cart'
 
 STRIPE_SECRET_KEY = 'sk_test_t4C8KfsHsI6bL3K3JwN157Lj00N5RWh1iv'
