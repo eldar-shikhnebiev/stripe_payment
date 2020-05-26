@@ -29,6 +29,9 @@ ALLOWED_HOSTS = []
 
 CART_SESSION_ID = 'cart'
 
+STRIPE_SECRET_KEY = 'sk_test_t4C8KfsHsI6bL3K3JwN157Lj00N5RWh1iv'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_bsb1g1HRDWC6Yv219fyWNUKN00GIT0KXNj'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shop',
     'cart',
+    'payments',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +69,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.context_processors.cart',
             ],
         },
     },
